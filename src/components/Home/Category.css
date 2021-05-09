@@ -1,0 +1,39 @@
+.cat-div {
+  margin: 10px;
+}
+
+.cat-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  gap: 5%;
+  margin: 0;
+  background-color: rgb(87, 126, 122);
+}
+
+.cat-h3 {
+  font-size: 1.2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cat-li {
+  position: relative;
+  text-align: center;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.cat-li:hover {
+  background-color: rgb(77, 160, 152);
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}
+
+.cat-img {
+  height: 40%;
+  width: 60%;
+}

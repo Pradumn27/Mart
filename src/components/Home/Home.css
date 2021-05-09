@@ -1,0 +1,252 @@
+/* CSS Document */
+body {
+  margin: 0px;
+  padding: 0px;
+  /* background-color:#eef8ff; */
+  background-color:#9ebebeb5;
+}
+
+.body{
+}
+a {
+  text-decoration: none;
+}
+.box {
+  width: 300px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 25px;
+}
+.slide-img {
+  margin: 10px;
+  height: 300px;
+  position: relative;
+}
+.slide-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  box-sizing: border-box;
+}
+.detail-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-family: calibri;
+}
+.type {
+  display: flex;
+  flex-direction: column;
+}
+.type a {
+  color: #222222;
+  margin: 5px 0px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding-right: 8px;
+}
+.type span {
+  color: rgba(26, 26, 26, 0.5);
+}
+.price {
+  color: #333333;
+  font-weight: 600;
+  font-size: 1.1rem;
+  font-family: poppins;
+  letter-spacing: 0.5px;
+}
+.overlay {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(92, 95, 236, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.buy-btn {
+  margin: 5px;
+  width: 160px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #252525;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: calibri;
+  border-radius: 20px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+}
+
+.buy-btn:hover {
+  color: #ffffff;
+  background-color: #f15fa3;
+  transition: all ease 0.3s;
+}
+
+.overlay {
+  visibility: hidden;
+}
+.slide-img:hover .overlay {
+  visibility: visible;
+  animation: fade 0.5s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.prod-ul {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  overflow: hidden;
+}
+/* 
+.item{
+	height: 250px;
+	width: 250px;
+} */
+
+.slider {
+  position: relative;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 500px;
+  font-size: 3rem;
+  color: #000;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 500px;
+  font-size: 3rem;
+  color: #000;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s ease;
+  transform: scale(1);
+  border: 2px solid brown;
+}
+
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+.backdrop img{
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  margin-left: 200px;
+  box-shadow: 3px 5px 7px rgba(0,0,0,0.5);
+  border: 3px solid white;
+}
+
+.enclose{
+  position: fixed;
+  margin: 40px 70px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  max-width: 90%;
+  max-height: 90%;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(152, 139, 165); */
+  background-image: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+.Details{
+  display: block;
+  background-color: rgb(80, 158, 158);
+  color: #ffffff;
+  width: 50%;
+  max-height: 90%;
+  align-items: center;
+  margin: 60px auto;
+  box-shadow: 3px 5px 7px rgba(0,0,0,0.5);
+  border: 3px solid white;
+}
+
+.motionul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.motionli{
+  height: 30px;
+  text-align: center;
+  width: 40px;
+  font-size: 20px;
+  margin: 10px;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+.motionli:hover{
+  color: #ffffff;
+  background-color: #5fccf1;
+  transition: all ease 0.3s;
+}
+
+.motionbtns{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sza{
+  font-size: 20px;
+}

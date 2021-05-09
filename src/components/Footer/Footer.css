@@ -1,0 +1,25 @@
+body{
+    margin: 0 0;
+    box-sizing: border-box;
+}
+
+.footer{
+    background-color: rgb(165, 114, 212);
+    padding-top: 20px;
+}
+
+.icons{
+    display: flex;
+    list-style: none;
+}
+
+.icone{
+    height: 50px;
+    width: 50px;
+}
+
+.About,.Socials{
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
